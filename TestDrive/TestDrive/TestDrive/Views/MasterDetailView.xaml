@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestDrive.Views.MasterDetailView"
+             xmlns:pages="clr-namespace:TestDrive.Views">
+  <!--<MasterDetailPage.Master>      
+    --><!--<pages:MasterDetailViewMaster x:Name="MasterPage" />-->
+      <!--perfil do usuario-->
+        <!--<ContentPage Title="Perfil">
+            <Label Text="Este é o perfil do usuario"></Label>
+        </ContentPage>--><!--
+        <pages:MasterView></pages:MasterView>
+  </MasterDetailPage.Master>-->
+  <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <pages:ListagemView></pages:ListagemView>
+            </x:Arguments>
+        </NavigationPage>
+        <!--listagem de veiculos-->
+    <!--<NavigationPage>
+      <x:Arguments>
+        <pages:MasterDetailViewDetail />
+      </x:Arguments>
+    </NavigationPage>-->
+  </MasterDetailPage.Detail>
+</MasterDetailPage>
